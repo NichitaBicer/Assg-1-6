@@ -1,0 +1,117 @@
+
+@keyframes fa {
+    from {
+        color:red;
+    }
+    to {
+        color:;
+    }
+}
+.content h1{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    animation: fa 2s;
+}
+h1::selection {
+  background-color:DarkGreen;
+  color:white;
+}
+h1::before {
+  content:"!'";
+  color:DarkGreen;
+}
+h1::after {
+  content:"'!";
+  color:DarkGreen;
+}
+.tx::first-letter{
+    color:DarkGreen;
+    font-size:25px;
+}
+
+@keyframes my-ani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.text {
+    text-align:justify;
+    position:relative;
+    left:650px;
+    bottom:280px;
+    font-size:22px;
+    font-weight: bold;
+    animation: my-ani 2.5s;
+}
+
+@keyframes my-an{
+    from {right:1000px}
+    to {right:0px;}
+}
+iframe{
+    margin:30px;
+    position:relative;
+    top:45px;
+    animation: my-an 2s;
+
+}
+body{
+    background-color:#dddddd;
+}
+span:hover {
+  color:darkblue;
+}
+.footer{
+    position:relative;
+    left:450px;
+    bottom:190px;
+    font-size:40px;
+
+}
+section{
+    background-color:#b3c9f4;
+}
+.link1, .link2{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.link1{
+    opacity:0.7;
+}
+.link2{
+    visibility:visible;
+}
+
+.link2:visited{
+    color:green;
+}
+.in{
+    display:block;
+}
+@keyframes my-anim{
+    from {filter: blur(0px);}
+    to {filter: blur(7px);}
+}
+img {
+    height:245px;
+    width:416px;
+    position:relative;
+    left:420px;
+    bottom:210px;
+    filter: blur(7px);
+    animation: my-anim 2s;
+}
+img:hover {
+    height:260px;
+    width:448px;
+    position:relative;
+    left:390px;
+    bottom:210px;
+    filter: blur(0px);
+}
